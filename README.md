@@ -1,5 +1,7 @@
 # Reed: evidence for one result on coding agents
 
+**New here?** Start with [What is Reed? Explained simply](WHAT-IS-REED.md). [This repository, explained simply](EVIDENCE-EXPLAINED.md) covers what each file is and how to check the results yourself.
+
 **The result:**
 - **gpt-6-astra (OpenAI), run in our agent harness on 638 real pull requests,** passes all of a task's hidden checks on **68.5 %** of tasks when given Reed's behaviour record of the change. Without it, the figure is **40.3 %**.
   - That is **+28.2 points** (95 % CI +24.4 to +32.0; paired McNemar exact p 6.5 × 10⁻⁴³).
@@ -9,7 +11,7 @@
 
 **"Hidden"** means the agent never saw those checks. The examples shown to the agent never include them.
 
-Every number here is recomputed from the per-task outcomes in `data/` by `python3 verify.py`, which uses only the Python standard library.
+Every number in the results table is recomputed from the per-task outcomes in `data/` by `python3 verify.py`, which uses only the Python standard library. The stricter whole-task scores in the notes come from our records and are not in `data/`.
 
 ## Results
 
